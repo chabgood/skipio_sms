@@ -10,7 +10,7 @@ class Contact
   end
 
   def get_all_contacts
-    contacts = self.class.get("/contacts", @options).parsed_response["data"]
+    contacts = self.class.get('/contacts', @options).parsed_response["data"]
     create_objects(contacts)
   end
 
